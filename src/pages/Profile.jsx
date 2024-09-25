@@ -15,14 +15,15 @@ function Profile() {
 
   const getName = ()=>{
     let findUser = employees.find(user=> user.id === id)
-    findUser? setUserInfo({"name": findUser.name, "email":findUser.email}): setUserInfo({}) 
+    findUser? setUserInfo({name: findUser.name, email:findUser.email}): setUserInfo({}) 
    
   }
 
   return (
     <main className='flex justify-center lg:py-12 py-12 '>
-      {userInfo ? 
-      (<section className='flex flex-col gap-y-6 items-center'>
+      {userInfo.name && userInfo.email ? 
+      (
+      <section className='flex flex-col gap-y-6 items-center'>
              <p className='text-[1.2em] text-secondary-purple text-center font-bold flex-wrap'>Welcome {userInfo.name}</p>
              <p className='flex justify-center gap-4 items-center'>Connected via: <a href={`mailto:${userInfo.email}`}><img src={email} className='w-6 cursor-pointer'></img></a> </p>
 
