@@ -24,8 +24,8 @@ function Profile() {
       {userInfo.name && userInfo.email ? 
       (
       <section className='flex flex-col gap-y-6 items-center'>
-             <p className='text-[1.2em] text-secondary-purple text-center font-bold flex-wrap'>Welcome {userInfo.name}</p>
-             <p className='flex justify-center gap-4 items-center'>Connected via: <a href={`mailto:${userInfo.email}`}><img src={email} className='w-6 cursor-pointer'></img></a> </p>
+             <p className='text-[1.2em] text-secondary-purple text-center font-bold flex-wrap'>{userInfo.name}</p>
+             <p className='flex justify-center gap-4 items-center'>Connect via: <a href={`mailto:${userInfo.email}`}><img src={email} className='w-6 cursor-pointer'></img></a> </p>
 
       </section>
     )
