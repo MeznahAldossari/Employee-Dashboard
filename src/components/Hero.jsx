@@ -11,7 +11,8 @@ function Hero() {
         
          <section className='w-full h-fit  z-0 flex flex-col justify-center relative max-sm:flex max-sm:flex-col max-sm:justify-center max-sm:items-center'>
 
-            <div className='bg-contain lg:bg-cover w-[40vw] h-[30vh] lg:px-[33px] lg:w-[30vw]  lg:h-[62vh] max-sm:h-[35vh] max-sm:object-contain max-sm:w-[95vw]'  style={{backgroundImage:`url(${vector})`, backgroundRepeat:"no-repeat"}}>
+
+            <div className='bg-contain rounded-full lg:bg-cover w-[24rem] flex flex-col justify-center   h-[24rem] lg:px-[33px] lg:w-[24rem]   lg:h-[24rem] max-sm:h-[35vh] max-sm:object-contain max-sm:w-[95vw]'  style={{backgroundImage:`url(${vector})`, backgroundRepeat:"no-repeat"}}>
             </div>
 
          </section>

@@ -7,10 +7,10 @@ import tetco from "../assets/tetco.png"
 function Teams() {
    
   return (
-    
-    <article className='py-10 max-sm:min-h-[50vh] max-md:justify-center max-sm:justify-start  max-md:flex  flex-grow max-sm:overflow-y-hidden max-sm:overflow-x-hidden md:px-[2.2rem] lg:px-[3rem] max-sm:flex max-sm:flex-col  lg:h-[32vh]  w-full relative overflow-y-hidden'>
+     
+    <article className='py-10 lg:flex lg:flex-col lg:items-center max-sm:min-h-[50vh] max-md:justify-center max-sm:justify-start  max-md:flex  flex-grow max-sm:overflow-y-hidden max-sm:overflow-x-hidden md:px-[2.2rem] lg:px-[3rem] max-sm:flex max-sm:flex-col  lg:h-[32vh]  w-full relative overflow-y-hidden'>
        
-      <section className='lg:flex  h-fit lg:py-0 max-md:w-[90vw] flex justify-between items-end  max-sm:flex max-sm:w-full max-sm:flex-col max-sm:gap-y-4  lg:justify-between  lg:items-end lg:px-[33px]  w-full  z-40'>
+      <section className='lg:flex lg:w-[90vw] lg:px-[1.2rem] h-fit lg:py-0 max-md:w-[90vw] flex justify-between items-end  max-sm:flex max-sm:w-full max-sm:flex-col max-sm:gap-y-4  lg:justify-between  lg:items-end   w-full  z-40'>
         <section className='flex flex-col max-sm:gap-y-1 max-sm:w-full  max-sm:px-[1.3rem]'>
           <h1 className='font-sans font-medium text-[0.78em] text-gray'>TEAM</h1>
               {employees?.map((member, index)=>(
@@ -22,8 +22,8 @@ function Teams() {
 
         </section>
             
-        <section className='max-sm:px-[1.3rem] px-[3rem] lg:px-[0] max-sm:w-full'>
-              <p className='bg-secondary-purple flex items-center w-[20vw] h-[3vh] max-sm:px-5 lg:px-6 px-6 max-sm:w-[22vw] max-sm:h-[3vh]  lg:w-[12vw] lg:h-[5vh] rounded-sm'>
+        <section className='max-sm:px-[1.3rem] max-sm:py-4 lg:px-[0] max-sm:w-full'>
+              <p className='bg-secondary-purple max-sm:py-1 flex items-center w-[22vw] h-[3.5vh] max-sm:px-5 lg:px-6 px-6 max-sm:w-[24vw] max-sm:h-[3.5vh]  lg:w-[12vw] lg:h-[5vh] rounded-sm'>
                 <img src={tetco} className='lg:h-[2.vh] min-h-[0.8vh]  bg-cover max-sm:min-h-[0.8vh] w-[100vw] lg:w-[100vw] '></img>
               </p>
 
