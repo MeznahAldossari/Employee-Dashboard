@@ -5,7 +5,7 @@ import Button from './Button'
 function Hero() {
   return (
     <>
-      <main className='bg-primary max-sm:h-[45vh] flex justify-center  lg:justify-center px-[50px] lg:px-[50px]  flex-col items-center lg:flex lg:flex-col lg:items-center w-full h-[40vh] lg:h-[68vh]'>
+      <main className='bg-primary pb-12 lg:pb-0 max-sm:pb-0 max-sm:h-[45vh] flex justify-center  lg:justify-center px-[50px] lg:px-[50px]  flex-col items-center lg:flex lg:flex-col lg:items-center w-full h-[40vh] lg:h-[68vh]'>
         <div className='bg-secondary top-[-36%] max-sm:top-[-13%] w-[40vw] absolute lg:top-[-36%] blur-3xl rounded-full h-[40vh] lg:w-[32vw] max-sm:h-[18vh] lg:h-[40vh]'>
         </div>
         

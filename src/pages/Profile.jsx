@@ -19,10 +19,10 @@ function Profile() {
   }
 
   return (
-    <>
-      {name && name !==""? <p>{name}</p> : <Errorpage/>}
+    <main className='flex justify-center lg:py-12 py-12 '>
+      {name && name !==""? <p className='text-[1.2em] text-secondary-purple font-bold flex-wrap'>Welcome {name}</p> : <Errorpage/>}
         
-    </>
+    </main>
   )
 }
 
