@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
 import employees from '../employees/employeeInfo'
+import Errorpage from './Errorpage';
 
 
 function Profile() {
@@ -13,13 +14,15 @@ function Profile() {
 
   const getName = ()=>{
     let findUser = employees.find(user=> user.id === id)
-    findUser? setName(findUser.name): setName("")
+    findUser? setName(findUser.name): setName("") 
+   
   }
 
   return (
-    <div>
-        <p>{name}</p>
-    </div>
+    <>
+      {name && name !==""? <p>{name}</p> : <Errorpage/>}
+        
+    </>
   )
 }
 

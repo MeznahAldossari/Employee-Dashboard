@@ -5,25 +5,25 @@ import Button from './Button'
 function Hero() {
   return (
     <>
-      <main className='bg-primary  lg:justify-center lg:px-[50px] lg:flex lg:flex-col lg:items-center w-full lg:h-[68vh]'>
-        <div className='bg-secondary  absolute lg:top-[-36%] blur-3xl rounded-full lg:w-[32vw] lg:h-[40vh]'>
+      <main className='bg-primary max-sm:h-[45vh] flex justify-center  lg:justify-center px-[50px] lg:px-[50px]  flex-col items-center lg:flex lg:flex-col lg:items-center w-full h-[40vh] lg:h-[68vh]'>
+        <div className='bg-secondary top-[-36%] max-sm:top-[-13%] w-[40vw] absolute lg:top-[-36%] blur-3xl rounded-full h-[40vh] lg:w-[32vw] max-sm:h-[18vh] lg:h-[40vh]'>
         </div>
         
-         <section className='w-full z-0 relative'>
+         <section className='w-full h-fit  z-0 flex flex-col justify-center relative max-sm:flex max-sm:flex-col max-sm:justify-center max-sm:items-center'>
 
-            <div className='bg-cover w-full lg:px-[33px] flex flex-col justify-center items-start'  style={{backgroundImage:`url(${vector})`, backgroundRepeat:"no-repeat", width:"30vw", height:"62vh"}}>
+            <div className='bg-contain lg:bg-cover w-[40vw] h-[30vh] lg:px-[33px] lg:w-[30vw]  lg:h-[62vh] max-sm:h-[35vh] max-sm:object-contain max-sm:w-[95vw]'  style={{backgroundImage:`url(${vector})`, backgroundRepeat:"no-repeat"}}>
             </div>
 
          </section>
         
-        <section className=' absolute flex flex-col justify-between  lg:py-4 lg:max-w-[87vw] z-40 w-full'>
-            <span className='flex gap-3'>
+        <section className='absolute lg:h-fit py-6 h-[30vh]  max-sm:h-[45vh]  flex flex-col justify-between max-sm:justify-center max-sm:gap-y-6  lg:py-4 max-sm:max-w-[90vw] lg:max-w-[87vw] z-40 w-[90vw]'>
+            <span className='flex max-sm:relative relative lg:static gap-3'>
                 <Button btnDetails = {{nameText:"In Progress", btnColor:"bg-progress"}}/>
                 <Button btnDetails = {{nameText:"Internal file", btnColor:"bg-internal"}}/>
 
             </span>
             
-            <h1 className='text-green py-1 leading-[16vh] font-bold text-[4.5em]'>
+            <h1 className='text-green py-1 lg:leading-[16vh] leading-[9.4vh] text-[4em] max-sm:leading-[7.5vh] font-bold max-sm:text-[2.5em] lg:text-[4.5em]'>
                  Employee<span className='align-super'>&#44;</span>s <br></br>Dashboard</h1>
         
             <p className='text-white  font-sans tracking-wide'>Contains all designs for the employee dashboard Contains all designs.</p>
